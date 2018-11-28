@@ -13,10 +13,12 @@ terraform init
 terraform plan --var-file=variables.tfvars
 ```
 Above command will output all the resources terraform is going to create on your behalf. Take a close look at them and if you are fine, execute below command which will actually create the respurces for you.
+<img width="851" alt="screen shot 2018-11-28 at 4 13 08 pm" src="https://user-images.githubusercontent.com/9275193/49183324-9d6ad380-f32a-11e8-85ae-343d610df195.png">
 
 ```
 terraform apply --var-file=variables.tfvars --auto-approve
 ```
+<img width="910" alt="screen shot 2018-11-28 at 4 14 14 pm" src="https://user-images.githubusercontent.com/9275193/49183410-d60aad00-f32a-11e8-880f-064c8d8cb9d0.png">
 
 At this point, your REST API is deployed and ready to be tested. Above command will print two endpints - one for dev and another for prod. Now copy one of them and call it using curl (or paste on browser)
 
